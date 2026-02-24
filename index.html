@@ -8,5 +8,30 @@
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
+<form action="/action_page.php" target="_blank">
+
+	<label for="acc-num">Account Number</label><br>
+	<input type="text" id="acc-num" name="acc-num"><br>
+	<label for="reg">Region</label><br>
+	<select name="reg[]" id="reg">
+		<option value="East-Man">East Manitoba</option>
+		<option value="West-Man">West Manitoba</option>
+	</select><br>
+	<label for="email">Enter Email</label>
+	<input type="email" id="email" name="email"><br>
+	
+	<input type="submit" value="Submit">
+	
+
+</form>
+
+  <h1>Hackathon Frontend</h1>
+
+  <button onclick="callBackend()">Call Backend</button>
+
+  <pre id="output"></pre>
+
+  <script src="app.js"></script>
+
 </body>
 </html>
