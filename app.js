@@ -1,4 +1,4 @@
-const API_BASE = "https://hydro-tracker-api-nsa-gjgtdch6gydme8fu.eastus-01.azurewebsites.net";
+const API_BASE_URL = "https://hydro-tracker-api-nsa-gjgtdch6gydme8fu.eastus-01.azurewebsites.net";
 
 document.getElementById("hydro-form").addEventListener("submit", submitForm);
 
