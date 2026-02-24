@@ -7,13 +7,14 @@
 
 <h1>Manitoba Hydro Form</h1>
 
-<form action="/action_page.php" target="_blank">
+<form id="hydro-form">
 
 	<label for="sub-id">Submission ID</label><br>
-	<input type="text" id="acc-num" name="acc-num"><br>
+	<input type="text" id="sub-id" name="sub-id"><br>
 	
 	<label for="reg">Region</label><br>
 	<select name="reg[]" id="reg">
+		<option value="">-- Select Region</option>
 		<option value="East-Man">East Manitoba</option>
 		<option value="West-Man">West Manitoba</option>
 	</select><br>
@@ -26,10 +27,20 @@
 	<input type="number" id="lon" name="lon"></input><br>
 	
 	<label for="con-ty">Connection Type</label><br>
-	<input type="text" id="con-ty" name="con-ty"></input><br>
+	<select id="con-ty">
+	  <option value="">-- Select Connection Type --</option>
+	  <option value="New Service">New Service</option>
+	  <option value="Service Upgrade">Service Upgrade</option>
+	  <option value="Temporary Service">Temporary Service</option>
+	  <option value="Permanent Service">Permanent Service</option>
+	  <option value="Residential">Residential</option>
+	  <option value="Commercial">Commercial</option>
+	  <option value="Industrial">Industrial</option>
+	  <option value="Renewable Generation">Renewable Generation</option>
+	</select><br>
 	
-	<label for="req-cap-r">Requested Capacity Range</label><br>
-	<input type="text" id="req-cap-r" name="req-cap-r"></input><br>
+	<label for="cap-r">Requested Capacity Range</label><br>
+	<input type="text" id="cap-r" name="cap-r"></input><br>
 	
 	<label for="sub-date">Submitted Date</label><br>
 	<input type="datetime-local" id="sub-date" name="sub-date"></input><br>
@@ -38,7 +49,15 @@
 	<input type="datetime-local" id="comp-date" name="comp-date"></input><br>
 	
 	<label for="stat">Status</label><br>
-	<input type="text" id="stat" name="stat"></input><br>
+	<select id="stat" name="stat">
+	  <option value="">-- Select Status --</option>
+	  <option value="Submitted">Submitted</option>
+	  <option value="Under-Review">Under Review</option>
+	  <option value="Approved">Approved</option>
+	  <option value="Rejected">Rejected</option>
+	  <option value="On-Hold">On Hold</option>
+	  <option value="Completed">Completed</option>
+	</select><br>
 	
 	<label for="wait">Wait Time (Days)</label><br>
 	<input type="number" id="wait" name="wait"></input><br>
@@ -59,4 +78,5 @@
 
 </body>
 </html>
+
 
